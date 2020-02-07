@@ -19,9 +19,7 @@ def display_board(board)
 end
 
 def input_to_index(user_input)
-  puts("Enter TTC position (1 to 9):  ")
-  user_input = gets.strip
-  return user_input.to_i
+  return user_input.to_i - 1
 end
 
 # Should accept a board and an index from the user and return true
