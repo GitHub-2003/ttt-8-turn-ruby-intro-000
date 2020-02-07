@@ -32,6 +32,7 @@ def valid_move?(board, index)
     return (board[index] == " ")
   else
     return false
+  end
 end
 
 # should accept a board, an index from the user
