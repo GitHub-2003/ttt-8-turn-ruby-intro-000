@@ -26,11 +26,7 @@ end
 # if the index is within the correct range of 0-8 and
 # is currently unoccupied by an X or O token.
 def valid_move?(board, index)
-  if index < 0 || index > 8
-    return false
-  else
-    return (board[index] == " ")
-  end
+  return (board[index] == " ")
 end
 
 # should accept a board, an index from the user
