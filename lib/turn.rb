@@ -1,9 +1,11 @@
 def turn(board)
-  index = 0
-  until index > 0 and index < 10
+  index = -1
+  while index < 0 || index > 8
     puts "Please enter 1-9:"
+    index = input_to_index(gets.strip)
   end
-  return index
+  if valid_move?(board, index)
+    move(board, index, "X")
 end
 
 # Should accept a board as an argument and
